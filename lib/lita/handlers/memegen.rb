@@ -21,7 +21,7 @@ module Lita
       route %r{(one does not simply) (.*)}i,                       :meme_simply,           help: { "one does not simply.." => "generates one does not simply.. meme" }
       route %r{(grumpy cat) (.*),(.*)}i,                           :meme_grumpy_cat,       help: { "grumpy cat .. , .." => "generates grumpy cat .. , .. meme" }
       route %r{(AM I THE ONLY ONE AROUND HERE) (.*)}i,             :meme_am_i_only,        help: { "AM I THE ONLY ONE AROUND HERE.." => "generates AM I THE ONLY ONE AROUND HERE.. meme" }
-      route %r{(BRACE YOURSEL(F|VES)) (.*)}i,                      :meme_brace_yourselves, help: { "BRACE YOURSELVES.." => "generates BRACE YOURSELVES.. meme" }
+      route %r{(BRACE YOURSELF|BRACE YOURSELVES) (.*)}i,                      :meme_brace_yourselves, help: { "BRACE YOURSELVES.." => "generates BRACE YOURSELVES.. meme" }
       route %r{(WHAT IF I TOLD YOU) (.*)}i,                        :meme_what_if_i,        help: { "WHAT IF I TOLD YOU.." => "generates WHAT IF I TOLD YOU.. meme" }
 
       def meme_y_u_no(response)
